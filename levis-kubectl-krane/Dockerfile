@@ -1,4 +1,4 @@
-FROM ghcr.io/kubeopsskills/levis:1.0.1-alpha
+FROM ghcr.io/kubeopsskills/levis:1.0.2-alpha
 RUN apt-get update && apt-get install git build-essential ruby ruby-dev rubygems ruby-bundler apt-transport-https gnupg2 -y \
     && curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg \ 
     | apt-key add - \
