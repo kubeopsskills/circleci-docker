@@ -7,7 +7,7 @@ RUN apk --no-cache add sudo shadow which nodejs-current readline linux-pam
 RUN echo "Install AZURE CLI" \
     && apk --no-cache add curl bash npm py3-pip \
     && apk --no-cache add --virtual=build make gcc musl-dev python3-dev libffi-dev openssl-dev cargo \
-pip3 install azure-cli \
+    && pip3 install azure-cli \
     && apk del --purge build \
     && rm -rf /var/cache/apk/* && rm -rf /tmp/* \
     && echo "Done install AZURE CLI"
