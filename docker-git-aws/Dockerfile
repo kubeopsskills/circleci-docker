@@ -2,6 +2,9 @@ FROM docker:19.03.13-git
 
 ENV GLIBC_VER=2.31-r0
 
+RUN echo "Install Node" 
+RUN apk add --no-cache nodejs-current npm
+
 RUN echo "Install AWS" && \
     apk --no-cache add \
         binutils \
