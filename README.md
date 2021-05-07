@@ -1,1 +1,35 @@
-KubeOps CircleCI Docker Images
+# KubeOps CircleCI Docker
+
+**KubeOps CircleCI Docker** is a collection of container images which we're using in our CI/CD pipelines in wide ranges of customers.
+
+This is an project built with ❤️ by [KubeOps Skills](https://www.kubeops.guru). We encourage you to try it out, [leave feedback](#help--feedback), and [jump in to help](#contributing)!
+
+### Contents
+- [Versioning](#versioning)
+- [Help & Feedback](#help--feedback)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Versioning
+| Container Image with Tag | Description | Feature |
+|----------------|------------ |---------------------|
+| ghcr.io/kubeopsskills/kubeops-circleci:1.0.1-docker-aws | Docker in Docker with AWS support | Docker, Git, AWS CLI |
+| ghcr.io/kubeopsskills/kubeops-circleci:1.0.0-kubernetes-kustomize-aws | kubectl & kustomize with AWS support  | Docker, Git, AWS CLI |
+| ghcr.io/kubeopsskills/kubeops-circleci:1.0.0-docker-azure | Docker in Docker with Azure support | Docker, Git, Azure CLI |
+| ghcr.io/kubeopsskills/kubeops-circleci:1.0.0-kubernetes-kustomize-azure | kubectl & kustomize with Azure support | Docker, Git, Azure CLI |
+
+## Help & Feedback
+Interacting with the community and the development team is a great way to
+contribute to the project. Please consider the following venues (in order):
+
+* Search [open issues](https://github.com/kubeopsskills/circleci-docker/issues)
+
+## Contributing
+
+We welcome community contributions and pull requests. See our [contribution
+guide](./CONTRIBUTING.md) for more information on how to report issues, set up a
+development environment and submit code.
+
+## License
+
+This project is distributed under the [MIT License, Copyright (c) 2020 KUBEOPS SKILLS Co., Ltd.](./LICENSE)
