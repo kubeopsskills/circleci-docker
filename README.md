@@ -2,7 +2,7 @@
 
 **KubeOps CircleCI Docker** is a collection of container images which we're using in our CI/CD pipelines in wide ranges of customers.
 
-This is an project built with ❤️ by [KubeOps Skills](https://www.kubeops.guru). We encourage you to try it out, [leave feedback](#help--feedback), and [jump in to help](#contributing)!
+This is a project built with ❤️ by [KubeOps Skills](https://www.kubeops.guru). We encourage you to try it out, [leave feedback](#help--feedback), and [jump in to help](#contributing)!
 
 ### Contents
 - [Versioning](#versioning)
