@@ -13,10 +13,10 @@ This is a project built with ❤️ by [KubeOps Skills](https://www.kubeops.guru
 ## Versioning
 | Container Image with Tag | Description | Feature |
 |----------------|------------ |---------------------|
-| ghcr.io/kubeopsskills/kubeops-circleci:1.0.1-docker-aws | Docker in Docker with AWS support | Docker, Git, AWS CLI |
-| ghcr.io/kubeopsskills/kubeops-circleci:1.0.0-kubernetes-kustomize-aws | kubectl & kustomize with AWS support  | kubectl, kustomize, AWS CLI |
-| ghcr.io/kubeopsskills/kubeops-circleci:1.0.0-docker-azure | Docker in Docker with Azure support | Docker, Git, Azure CLI |
-| ghcr.io/kubeopsskills/kubeops-circleci:1.0.0-kubernetes-kustomize-azure | kubectl & kustomize with Azure support | kubectl, kustomize, Azure CLI |
+| public.ecr.aws/kubeopsskills/circleci:1.0.1-docker-aws | Docker in Docker with AWS support | Docker, Git, AWS CLI |
+| public.ecr.aws/kubeopsskills/circleci:1.0.0-kubernetes-kustomize-aws | kubectl & kustomize with AWS support  | kubectl, kustomize, AWS CLI |
+| public.ecr.aws/kubeopsskills/circleci:1.0.0-docker-azure | Docker in Docker with Azure support | Docker, Git, Azure CLI |
+| public.ecr.aws/kubeopsskills/circleci:1.0.0-kubernetes-kustomize-azure | kubectl & kustomize with Azure support | kubectl, kustomize, Azure CLI |
 
 ## Help & Feedback
 Interacting with the community and the development team is a great way to
