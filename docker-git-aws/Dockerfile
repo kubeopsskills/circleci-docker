@@ -5,8 +5,10 @@ ENV GLIBC_VER=2.31-r0
 RUN \
     echo "@edge http://dl-cdn.alpinelinux.org/alpine/edge/main" >> /etc/apk/repositories
 
-RUN echo "Install Node" 
-RUN apk add --no-cache nodejs-current@edge npm@edge
+LABEL "com.azure.dev.pipelines.agent.handler.node.path"="/usr/bin/node"
+RUN apk update
+RUN echo "Install Node"
+RUN apk add --no-cache  sudo shadow which nodejs-current@edge npm@edge readline linux-pam
 
 RUN echo "Install AWS" && \
     apk --no-cache add \
