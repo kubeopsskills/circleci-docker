@@ -4,6 +4,10 @@ ENV GLIBC_VER=2.31-r0
 ENV KUBE_VERSION=1.19.0
 ENV KUSTOMIZE_VERSION=3.8.7
 
+LABEL "com.azure.dev.pipelines.agent.handler.node.path"="/usr/bin/node"
+RUN apk update
+RUN apk --no-cache add sudo shadow which nodejs-current readline linux-pam
+
 RUN echo "Install Kubectl && Kustomize && AWS" && \
     apk --no-cache add \
         gettext \
