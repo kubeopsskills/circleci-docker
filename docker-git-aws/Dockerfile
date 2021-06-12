@@ -8,7 +8,7 @@ RUN \
 LABEL "com.azure.dev.pipelines.agent.handler.node.path"="/usr/bin/node"
 RUN apk update
 RUN echo "Install Node"
-RUN apk add --no-cache  sudo shadow which nodejs-current@edge npm@edge readline linux-pam
+RUN apk add --no-cache curl bash sudo shadow which nodejs-current@edge npm@edge readline linux-pam
 
 RUN echo "Install AWS" && \
     apk --no-cache add \
