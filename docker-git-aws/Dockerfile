@@ -1,14 +1,16 @@
-FROM docker:19.03.13-git
+FROM docker:20.10.7-git
 
-ENV GLIBC_VER=2.31-r0
+ARG YQ_VERSION=v4.15.1
+ARG GLIBC_VER=2.31-r0
 
-RUN \
-    echo "@edge http://dl-cdn.alpinelinux.org/alpine/edge/main" >> /etc/apk/repositories
+RUN echo "@edge http://dl-cdn.alpinelinux.org/alpine/edge/main" >> /etc/apk/repositories
 
 LABEL "com.azure.dev.pipelines.agent.handler.node.path"="/usr/bin/node"
 RUN apk update
 RUN echo "Install Node"
-RUN apk add --no-cache curl bash sudo shadow which nodejs-current@edge npm@edge readline linux-pam
+RUN apk add --no-cache  sudo shadow which nodejs-current@edge npm@edge readline linux-pam
+RUN apk --no-cache add nodejs yarn --repository=http://dl-cdn.alpinelinux.org/alpine/edge/community
+RUN apk add --update python3 make g++ && rm -rf /var/cache/apk/*
 
 RUN echo "Install AWS" && \
     apk --no-cache add \
@@ -36,3 +38,6 @@ RUN echo "Install AWS" && \
     && rm glibc-bin-${GLIBC_VER}.apk \
     && rm -rf /var/cache/apk/* \
     && echo "Done install AWS"
+
+RUN wget -O /usr/bin/yq "https://github.com/mikefarah/yq/releases/download/${YQ_VERSION}/yq_linux_amd64"
+RUN chmod ugo+x /usr/bin/yq
