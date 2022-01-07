@@ -11,6 +11,7 @@ RUN echo "Install Node"
 RUN apk add --no-cache  sudo shadow which nodejs-current@edge npm@edge readline linux-pam
 RUN apk --no-cache add nodejs yarn --repository=http://dl-cdn.alpinelinux.org/alpine/edge/community
 RUN apk add --update python3 make g++ && rm -rf /var/cache/apk/*
+
 RUN echo "Install AWS" && \
     apk --no-cache add \
         binutils \
