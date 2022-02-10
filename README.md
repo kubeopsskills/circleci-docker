@@ -17,7 +17,7 @@ This is a project built with ❤️ by [KubeOps Skills](https://www.kubeops.guru
 | public.ecr.aws/kubeopsskills/circleci:1.0.1-kubernetes-kustomize-aws | kubectl & kustomize with AWS support  | kubectl, kustomize, AWS CLI |
 | public.ecr.aws/kubeopsskills/circleci:1.0.1-docker-azure | Docker in Docker with Azure support | Docker, Git, Azure CLI |
 | public.ecr.aws/kubeopsskills/circleci:1.0.1-docker-azure-maven | Docker in Docker with Azure support | Docker, Git, Azure CLI, Maven, JDK 11 |
-| public.ecr.aws/kubeopsskills/circleci:1.0.0-docker-gcloud | Docker in Docker with GCloud support | Docker, Git, GCloud CLI |
+| public.ecr.aws/kubeopsskills/circleci:1.0.1-docker-gcloud | Docker in Docker with GCloud support | Docker, Git, GCloud CLI |
 | public.ecr.aws/kubeopsskills/circleci:1.0.0-kubernetes-kustomize-azure | kubectl & kustomize with Azure support | kubectl, kustomize, Azure CLI |
 | public.ecr.aws/kubeopsskills/circleci:1.0.2-kubernetes-krane | kubectl, krane and levis | kubectl, krane, levis |
 
