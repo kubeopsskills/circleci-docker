@@ -1,7 +1,7 @@
-FROM docker:20.10.7-git
+FROM docker:20.10.14-git
 
-ARG YQ_VERSION=v4.15.1
-ARG GLIBC_VER=2.31-r0
+ARG YQ_VERSION=v4.24.5
+ARG GLIBC_VER=2.35-r0 
 
 RUN echo "@edge http://dl-cdn.alpinelinux.org/alpine/edge/main" >> /etc/apk/repositories
 
